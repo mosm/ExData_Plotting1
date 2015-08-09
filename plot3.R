@@ -20,7 +20,8 @@ colnames(DateTime) <- c("DateTime")
 subpower <- cbind(DateTime, subpower)
 
 #Setting up png device
-png(filename="plot3.png", width=480, height=480)
+#Set bg="transparent" to mimic reference figures provided
+png(filename="plot3.png", width=480, height=480, bg="transparent")
 
 #setting up plot with the appropriate scales
 #Setting type to n to suppress plots

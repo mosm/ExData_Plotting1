@@ -20,7 +20,8 @@ colnames(DateTime) <- c("DateTime")
 subpower <- cbind(DateTime, subpower)
 
 #Setting up png device
-png(filename="plot4.png", width=480, height=480)
+#Set bg="transparent" to mimic reference figures provided
+png(filename="plot4.png", width=480, height=480, bg="transparent")
 
 #Set-up 2x2 plot matrix
 par(mfrow=c(2,2))

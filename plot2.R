@@ -20,7 +20,8 @@ colnames(DateTime) <- c("DateTime")
 subpower <- cbind(DateTime, subpower)
 
 #Setting up png device
-png(filename="plot2.png", width=480, height=480)
+#Set bg="transparent" to mimic reference figures provided
+png(filename="plot2.png", width=480, height=480, bg="transparent")
 
 #setting up plot with DateTime on x-axis and Global Active Power on y-axis
 #setting x-label to empty and setting appropriate y-label

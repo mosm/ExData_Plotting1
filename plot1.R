@@ -9,7 +9,8 @@ power <- read.table("household_power_consumption.txt", header=TRUE,
 subpower <- power[power$Date == "1/2/2007" | power$Date == "2/2/2007", ]
 
 #Setting up png device
-png(filename="plot1.png", width=480, height=480)
+#Set bg to transparent to mimic reference figures provided
+png(filename="plot1.png", width=480, height=480, bg="transparent")
 
 #setting up histogram for Global_active_power with color red
 #also setting x-label through "xlab" and title through "main"
